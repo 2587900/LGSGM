@@ -1,10 +1,10 @@
 # Precompute EfficientNet before, not run EfficientNet here
 # Include the Predicate visual Ft
 # Add Extra GCN for textual graph (after the RNN)
-from data_utils import *
-import models as md
-from metrics import *
-from retrieval_utils import *
+from data_utils import *             数据处理
+import models as md                  模型构建
+from metrics import *                评估模型性能
+from retrieval_utils import *        图像-文本检索任务的工具函数
 from torch.nn.utils.rnn import pad_sequence, pack_padded_sequence, pad_packed_sequence
 import itertools
 import torch.optim as optim
