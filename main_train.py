@@ -3,13 +3,13 @@ import torch    #PyTorch深度学习库，用于后续的模型训练和预测�
 import os       #Python的标准库之一，用于处理操作系统相关的功能，如文件路径等。
 import joblib   #Python的一个第三方库，用于高效地进行对象的序列化和反序列化操作。
 
-'''
+"""
 这段代码创建了一个字典 info_dict 并向其中添加了一个键值对。
 键是 'save_dir'，值是字符串 './Report'。
 
 这个字典可能被用于配置和传递到一个 Trainer 或 Evaluator 类的实例中，
 以控制训练和评估的行为。其中 'save_dir' 键可能表示将训练/评估结果保存的目录。
-'''
+"""
 info_dict = dict()
 info_dict['save_dir'] = './Report'
 
